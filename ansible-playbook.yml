@@ -1,0 +1,17 @@
+- hosts: localhost
+  gather_facts: false
+  become: true
+  vars:
+    ansible_connection: local
+  tasks:
+    - name: "Check ansible version >=2.7.8"
+      assert:
+        msg: "Ansible must be v2.7.8 or higher"
+        that:
+          - ansible_version.string is version("2.7.8", ">=")
+      tags:
+        - check   
+    - name: get the username running the deploy
+      become: false
+      local_action: command whoami
+      register: username_on_the_host
