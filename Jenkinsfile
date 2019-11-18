@@ -16,7 +16,7 @@ steps {
   //def constants = load 'constants.groovy'
   //def giturl = constants.giturl
   //sh "echo ${giturl}"
-  git url: ${env.giturl}
+  git url: "${env.giturl}"
  //}
   //git url: "${giturl}"
  //git url: 'https://github.com/shweta9651/java-junit-sample.git'
