@@ -13,10 +13,10 @@ stage('git clone') {
 steps {
  
 script {
- def scmUrl = scm.getUserRemoteConfigs()[0].getUrl()
+ //def scmUrl = scm.getUserRemoteConfigs()[0].getUrl()
   //def constants = load 'constants.groovy'
   //def giturl = constants.giturl
-  sh "echo ${scmUrl}"
+  sh "echo ${env.GIT_URL}"
 }
  // git url: "${env.giturl}"
  //}
