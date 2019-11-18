@@ -5,7 +5,7 @@ pipeline {
   
  environment {
   constants = load 'constants.groovy'
-  giturl = ${constants.giturl}
+  giturl = '${constants.giturl}'
  }
 stages {
  
