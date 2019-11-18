@@ -28,7 +28,7 @@ script {
 }  
 
 stage('compile source code') {
-     steps {
+     steps { 
          sh 'mvn clean install'
    
      }
