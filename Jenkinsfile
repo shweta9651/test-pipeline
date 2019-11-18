@@ -2,7 +2,7 @@ pipeline {
  agent { 
     node { label 'maven' }      
  }  
- environement {
+ script {
    def constants = load 'constants.groovy'
   def giturl = constants.giturl
  }
