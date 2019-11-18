@@ -12,11 +12,13 @@ stages {
 stage('git clone') {   
 steps {
  
-//script {
+script {
+ def scmUrl = scm.getUserRemoteConfigs()[0].getUrl()
   //def constants = load 'constants.groovy'
   //def giturl = constants.giturl
-  //sh "echo ${giturl}"
-  git url: "${env.giturl}"
+  sh "echo ${scmUrl}"
+}
+ // git url: "${env.giturl}"
  //}
   //git url: "${giturl}"
  //git url: 'https://github.com/shweta9651/java-junit-sample.git'
