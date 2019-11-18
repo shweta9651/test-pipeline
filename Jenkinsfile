@@ -3,10 +3,10 @@ pipeline {
     node { label 'maven' }         
  }     
   
- environment {
-  constants = load 'constants.groovy'
-  giturl = "${constants.giturl}"
- }
+ //environment {
+  //constants = load 'constants.groovy'
+  //giturl = "${constants.giturl}"
+// }
 stages {
  
 stage('git clone') {   
