@@ -1,11 +1,11 @@
+def constants = load 'constants.groovy'
+def giturl = constants.giturl
+
 pipeline {
  agent { 
     node { label 'maven' }      
  }  
- define {
-  def constants = load 'constants.groovy'
-  def giturl = constants.giturl
- }
+  
 stages {
  
 stage('git clone') {   
