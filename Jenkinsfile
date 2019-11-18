@@ -2,18 +2,18 @@ pipeline {
  agent { 
     node { label 'maven' }      
  }  
-   
-stages {
-  script {
-  def constants = load 'constants.groovy'
+ environement {
+   def constants = load 'constants.groovy'
   def giturl = constants.giturl
-  }
+ }
+stages {
+ 
 stage('git clone') {   
 steps {
-// git url: "https://github.com/shweta9651/ansible-poc"
+ 
  //script {
   //def constants = load 'constants.groovy'
-  //def giturl = constants.giturl
+ // def giturl = constants.giturl
   //sh "echo ${giturl}"
   git url: "${giturl}"
  //}
