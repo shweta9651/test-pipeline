@@ -7,7 +7,7 @@ stages {
   
 stage('git clone') {   
 steps {
- git url: "https://github.com/shweta9651/ansible-poc"
+// git url: "https://github.com/shweta9651/ansible-poc"
  script {
   def constants = load 'constants.groovy'
   def giturl = constants.giturl
