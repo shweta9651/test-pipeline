@@ -16,7 +16,8 @@ script {
  //def scmUrl = scm.getUserRemoteConfigs()[0].getUrl()
  // def constants = load 'constants.groovy'
 //  def giturl = constants.giturl
-  sh "echo ${env.GIT_URL}"
+  //sh "echo ${env.GIT_URL}"
+ sh "echo ${env.absoluteUrl}"
  sh "echo ${env.GIT_COMMIT}"
 }
 // git url: "${giturl}"
