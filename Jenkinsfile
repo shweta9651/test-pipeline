@@ -14,15 +14,15 @@ steps {
  
 script {
  //def scmUrl = scm.getUserRemoteConfigs()[0].getUrl()
-  def constants = load 'constants.groovy'
-  def giturl = constants.giturl
+ // def constants = load 'constants.groovy'
+//  def giturl = constants.giturl
   sh "echo ${env.GIT_URL}"
  sh "echo ${env.GIT_COMMIT}"
 }
- git url: "${giturl}"
+// git url: "${giturl}"
  //}
   //git url: "${giturl}"
- //git url: 'https://github.com/shweta9651/java-junit-sample.git'
+ git url: 'https://github.com/shweta9651/simple-java-project.git'
 // git url: 'https://github.com/miguno/java-docker-build-tutorial.git'  
 
 }
