@@ -17,6 +17,7 @@ script {
   //def constants = load 'constants.groovy'
   //def giturl = constants.giturl
   sh "echo ${env.GIT_URL}"
+ sh "echo ${env.GIT_COMMIT}"
 }
  // git url: "${env.giturl}"
  //}
