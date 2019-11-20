@@ -19,7 +19,7 @@ script {
   sh "echo ${env.GIT_URL}"
  sh "echo ${env.GIT_COMMIT}"
 }
- git url: "${env.giturl}"
+ git url: "${giturl}"
  //}
   //git url: "${giturl}"
  //git url: 'https://github.com/shweta9651/java-junit-sample.git'
