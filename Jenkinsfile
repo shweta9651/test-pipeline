@@ -1,7 +1,8 @@
 pipeline {
- agent {    
-    node { label 'maven' }         
- }     
+ agent any
+ //agent {    
+   // node { label 'maven' }         
+ //}     
   
  //environment {
   //constants = load 'constants.groovy'
@@ -31,12 +32,7 @@ script {
 }
 }  
 
-stage('compile source code') {
-     steps { 
-         sh 'mvn clean install'
-      
-     }
-  }
+
      
  }
 }        
