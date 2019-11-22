@@ -19,8 +19,8 @@ script {
  //sh "echo ${readContent['namespace']}"
  
  def readContent = readProperties file: 'test.properties'
-// sh "echo ${readContent['fruit']}"
- sh "echo ${readContent}"
+sh "echo ${readContent['fruit']}"
+ //sh "echo ${readContent}"
  //def scmUrl = scm.getUserRemoteConfigs()[0].getUrl()
  // def constants = load 'constants.groovy'
 //  def giturl = constants.giturl
