@@ -15,7 +15,7 @@ steps {
  
 script {
 def readContent = readFile env.WORKSPACE+"/test.txt"
- sh "echo ${readContent/namespace}"
+ sh "echo ${readContent['namespace']}"
  //def scmUrl = scm.getUserRemoteConfigs()[0].getUrl()
  // def constants = load 'constants.groovy'
 //  def giturl = constants.giturl
