@@ -14,8 +14,8 @@ stage('git clone') {
 steps {
  
 script {
- source test.txt
- sh "echo ${test/namespace}"
+def readContent = readFile env.WORKSPACE+"/test.txt"
+ sh "echo ${readContent}"
  //def scmUrl = scm.getUserRemoteConfigs()[0].getUrl()
  // def constants = load 'constants.groovy'
 //  def giturl = constants.giturl
