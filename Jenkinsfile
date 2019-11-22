@@ -25,7 +25,7 @@ script {
 // git url: "${giturl}"
  //}
   //git url: "${giturl}"
- git url: 'https://github.com/shweta9651/simple-java-project.git'
+// git url: 'https://github.com/shweta9651/simple-java-project.git'
 // git url: 'https://github.com/miguno/java-docker-build-tutorial.git'  
 
 }
