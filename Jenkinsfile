@@ -1,8 +1,8 @@
 pipeline {
- agent any
- //agent {    
-   // node { label 'maven' }         
- //}     
+// agent any
+ agent {    
+    node { label 'maven' }         
+ }     
   
  //environment {
   //constants = load 'constants.groovy'
