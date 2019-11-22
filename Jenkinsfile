@@ -1,6 +1,6 @@
 pipeline {
  agent {    
-    node { label 'nodejs' }         
+    node { label 'maven' }         
  }     
   
  //environment {
