@@ -12,7 +12,7 @@ stages {
  
 stage('git clone') {   
 steps {
-   
+     
 script {
 //def readContent = read env.WORKSPACE+"/test.txt"
  
